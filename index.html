@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Project RevoU</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#our-profile">Our Profile</a>
+                <a href="#our-menu">Our Menu</a>
+                <a href="message-us">Message Us</a>
+                <a href="about-us">About Us</a>
+            </nav>
+        </header>
+
+        <!-- Banner Welcome -->
+        <h1>
+          Hi <span id="displayName">User</span>, Welcome to my Website ^w^
+        </h1>
+        <p>
+         Ini adalah website latihan pertama
+        </p>
+        <!-- Akhir dari banner welcome -->
+
+        <!-- Message Us -->
+        <section>
+            <form name="message-form" onsubmit="return validateForm()">>
+                
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="birthday">Tanggal Lahir:</label>
+                <input type="date" id="birthday" name="birthDate"><br><br>             
+         
+                <input type="radio" id="lklk" name="jenisKelamin" value="Laki-laki">
+                <label for="lklk">Laki-laki</label>
+         
+                <input type="radio" id="pr" name="jenisKelamin" value="Perempuan">
+                <label for="pr">Perempuan</label><br><br>
+                
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="1" cols="50" placeholder="Masukkan pesan.."></textarea><br><br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+            <div class="output-form">
+                <p>Nama: <span id="sender-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birthDate"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-message"></span></p>
+            </div>
+        </section>
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Pesan</th>
+                <th>Profile</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td>Ceresa Vionny</td>
+                <td>15/07/2009</td>
+                <td>Perempuan</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <!-- BAGIAN FOOTER -->
+        <footer class="footer">
+            <h2 class="title-footer"></h2>
+            <p class="desc-footer"></p>
+            <div class="footer-bottom">
+                Thanks for RevoU😁👍 for 10 days free class
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    background-color: #fff8e7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b755b;
+    padding: 15px 20px 15px 20px;
+}
+.navigation {
+    color:#ffffff;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.option {
+    margin-bottom: 10px;
+}
+label {
+    margin-right: 10px;
+}
+
+/*Desain Tombol-tombol Form*/
+.submit {
+    margin-bottom: 10px;
+    bottom: 80px;
+    background-color: bisque;
+    font-size: larger;
+}
+/*Desain Tabel dan isinya*/
+table {
+    width: 60%; /* Lebar tabel */
+    margin: 0 auto; /* Membuat tabel berada di tengah halaman */
+    border-collapse: collapse; /* Menggabungkan batas sel */
+    background-color: #f2f2f2; /* Warna latar belakang tabel */
+    position: absolute; /* Mengatur posisi tabel */
+    top: 160px; /* Jarak dari atas */
+    right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+th, td {
+    border: 3px solid pink;
+    padding: 1px;
+}
+footer {
+    background-color: rgb(207, 161, 129);
+    margin: 0;
+    padding: 30px;
+    border: 0;
+    width:100%;
+}
+
+.footer,
+.title-footer,
+.desc-footer {
+    text-align: center;
+    color: #ebf4f6;
+    margin: 0;
+}
+.footer-bottom {
+    align-items: center;
+    color:black;
+    font-style: oblique;
+}
+/* Responsive Design for Mobile*/
+@media (max-width:600px) {
+
+}
