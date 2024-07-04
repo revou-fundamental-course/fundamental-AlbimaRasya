@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Project RevoU</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <img src="assets/nyanbrown.jpg" class="logo">
+                <div class="navmenu">
+                    <a href="#home">Home</a>
+                    <a href="#about-me">About Me</a>
+                    <a href="#message-us">Message Us</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Banner Welcome -->
+        <div class="bannerwelcome">
+            <h1>
+                Hi <span id="displayname">User</span>, Welcome to my Website ^w^
+            </h1>
+            <p>
+                Ini adalah website latihan pertama
+            </p>
+        </div>
+        <!-- Akhir dari banner welcome -->
+         
+        <!-- Banner AutoSlide -->
+        <div class="slideshow-container"
+            <div class="slide"><img src="assets/flowey.jpg" alt="Slide 1" id="slide1"</div>
+            <div class="slide"><img src="assets/ngebug.jpg" alt="Slide 2"</div>
+            <div class="slide"><img src="assets/americanstyle.jpg" alt="Slide 3"</div>
+        </div>
+
+        <!-- About me -->
+        <section id="about-me">
+            <header class="title-about"><h1>About Me</h1></header>
+            <article class="content">
+                <p>Perkenalkan, nama saya Albima Rasya. Status saya masih pelajar di SMKN 1 Medan. Saya masih pemula sekali terhadap programming dan hal semacamnya..🥰</p>
+            </article>
+        </section>
+
+        <!-- Message Us -->
+        <section id="message-us">
+            <form class="inputform"name="message-form" onsubmit="return validateForm()">
+                <h2>Message Us</h2>
+                <label for="name">Nama:</label>
+                <input required type="text" id="name" name="name" placeholder="Masukkan Nama.."><br><br>
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input required type="date" id="birthdate" name="birthdate"><br><br>             
+                 
+                <p class="jeniskelamin">Jenis Kelamin:</p>
+                <p class="gender">
+                    <input type="radio" id="male" name="gender" value="Laki-laki">
+                    <label for="male">Laki-laki</label>
+         
+                    <input type="radio" id="female" name="gender" value="Perempuan">
+                    <label for="female">Perempuan</label><br><br>
+                </p>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="10" cols="40" placeholder="Masukkan pesan.."></textarea><br><br>
+                <input class="submit" type="button" onclick="validateForm()" value="Submit">
+            </form>
+            <div class="output-form">
+                <p>Nama: <span id="sender-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birthdate"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-message"></span></p>
+            </div>
+        </section>
+        
+        <!-- BAGIAN FOOTER -->
+        <footer class="footer">
+            
+            <h3 class="title-footer">Semua foto di web bukanlah karya orisinil</h3>
+            <p class="footer-bottom">
+                Special thanks for RevoU
+            </p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
