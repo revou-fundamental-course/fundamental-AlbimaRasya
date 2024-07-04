@@ -3,6 +3,15 @@ let displayName = prompt('Ini siapa yh?','');
 document.getElementById("displayname").innerHTML= displayName;
 console.log("displayName")
 
+function replaceName() {
+    let name = prompt("Kamu mau dipanggil apa?", "");
+    document.getElementById("name").innerHTML = name;
+}
+
+document.getElementById("changeName").addEventListener("click", function () {
+    replaceName();
+});
+
 // Fungsi Banner AutoSlide
 // var slideIndex = 0;
 // carousel();
