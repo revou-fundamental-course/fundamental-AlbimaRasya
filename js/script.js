@@ -4,13 +4,10 @@ document.getElementById("displayname").innerHTML= displayName;
 console.log("displayName")
 
 function replaceName() {
-    let name = prompt("Kamu mau dipanggil apa?", "");
-    document.getElementById("name").innerHTML = name;
+    let displayName = prompt("Kamu mau dipanggil apa?", "");
+    document.getElementById("displayname").innerHTML = displayName;
 }
 
-document.getElementById("changeName").addEventListener("click", function () {
-    replaceName();
-});
 
 // Fungsi Banner AutoSlide
 // var slideIndex = 0;
